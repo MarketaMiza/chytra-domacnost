@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client';
 import './style.css';
 import {Header} from "./Header"
 import { Dashboard } from './Dashboard';
+import {smartHomeData} from './smartHomeData'
+
 
 
 const App = () => (
@@ -10,7 +12,7 @@ const App = () => (
  <div className="container">
 
     <Header title="Chytrý dům"/>
-    <Dashboard/>
+    <Dashboard data={smartHomeData}/>
 
  </div>
   </>

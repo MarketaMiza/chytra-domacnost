@@ -1,10 +1,14 @@
 import React from "react";
-import "./style.css"
+import "./style.css";
+import { Lights } from "../Lights";
 
-export const Dashboard = () => {
+export const Dashboard = ({ data }) => {
+  const { lights } = data;
   return (
     <>
-      <main className="dashboard"></main>
+      <main className="dashboard">
+        <Lights lights={lights} />
+      </main>
     </>
   );
 };
